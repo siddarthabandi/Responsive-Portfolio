@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    margin: 30px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #282828;
+  }
+  
+  #one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-bottom: 50px;
+    background-image: url("../Images/header-background.png");
+    height: 50vw;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    justify-content: center;
+  }
+  #one p {
+    width: 50%;
+  }
+  
+  #one h1 {
+    font-size: 2rem;
+  
+  }
+  
+  #one h1:nth-child(2) {
+    color: #36b37e;
+  }
+  #one ul {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px;
+    padding: 20px;
+  }
+  
+  #one li {
+    list-style: none;
+    background: none;
+    border: 0;
+  }
+  #grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  #grid-container > div {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 24rem;
+  }
+  
+  #grid-container > div > a {
+    border-radius: 4px;
+    background-color: #36b37f;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 100px;
+  }
+  #grid-container > div > ul {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 11px;
+  }
+  
+  #grid-container > div > ul > li {
+    list-style: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.137);
+    padding: 7px;
+    margin: 12px;
+  }
+  
+  #grid-container > div > a > button {
+    border: 0;
+    background: none;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(2, 2, 2);
+    width: auto;
+  }
+  #grid-container > div > a:hover {
+    transition: all 0.5s ease-in;
+    box-shadow: 0 8px 10px #36b37f;
+  }
+  #grid-container > div > a:active {
+    background-color: #008552;
+  }
+  #grid-container > div > img {
+    width: 23rem;
+  }
+  
+  #grid-container p {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .two h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: #2828289f;
+    line-height: 16px;
+    margin-top: 70px;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 100px;
+    margin: 10px;
+    position: relative;
+  }
+  .aboutleft {
+    width: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+  }
+  .aboutright {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 3 0%;
+  }
+  .about h2 {
+    padding-top: 50px;
+    
+  }
+  .about > p {
+    width: 70%;
+    margin: 15px;
+    font-size: 15px;
+    word-spacing: 5px;
+  
+  }
+  
+  .about > a {
+    border-radius: 4px;
+    background-color: #36b37f;
+    margin: 50px;
+  }
+  .about > a:hover {
+    transition: all 0.5s ease-in;
+    box-shadow: 0 8px 10px #36b37f;
+  }
+  
+  .about > a > button {
+    border: 0;
+    background: none;
+    padding: 5px;
+    margin: 5px;
+    width: auto;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .container > div {
+    border-radius: 5px;
+    padding: 10px;
+    width: 24rem;
+    height: 120%;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.137);
+  }
+  .container img {
+    width: 50px;
+    border-radius: 100%;
+    background-color: rgb(5, 5, 5);
+    justify-items: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .container > div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 11px;
+  }
+  .container > div > ul > li {
+    color: #36b37f;
+    list-style: none;
+    border-radius: 5px;
+    background-color: rgb(7, 7, 7);
+    padding: 7px;
+    margin: 5px;
+  }
+  .container > div p {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  #contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    gap: 30px;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+    place-content: center;
+    margin-top: 50px;
+  }
+  #contact > div {
+    border-radius: 5px;
+    border-color: #36b37e;
+    padding: 10px;
+  }
+  .contact-container > p {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: 800;
+    width: 100%;
+  }
+  .form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px;
+  }
+  
+  .fname {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+  }
+  form > div {
+    margin-bottom: 20px;
+  }
+  input,
+  textarea::placeholder {
+    font-style: italic;
+  }
+  
+  button {
+    border: 0;
+    background: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #f7f8f8;
+    color: white;
+    width: 20%;
+  }
+  
+  #contactleft {
+    width: 150px;
+    position: absolute;
+    left: 0;
+    margin-bottom: 50px;
+  }
+  
+  .contactmid {
+    width: 150px;
+    position: absolute;
+    left: 30%;
+  }
+  .contactright {
+    width: 150px;
+    position: absolute;
+    right: 0;
+  }
+  .first {
+    width: 20px;
+  }
+  
+  .navigation > ul {
+    width: 15;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20%;
+    padding: 20px;
+  }
+  .navigation > ul li {
+    list-style: none;
+    background: none;
+    border: 0;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    #grid-container {
+      display: block;
+      width: 50%;
+      gap: 20px;
+    }
+    .container{
+      display: block;
+    
+    }
+    #contact {
+      display: block;
+    }
+  
+  
+    
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+  
+    .nav-list{
+      margin: 10px;
+      padding: 10px;
+      gap: 7px;
+    
+     } 
+     #one {
+      display: block;
+      text-align: center;
+      margin: 10px;
+      gap: 20px;
+    
+    }
+    #one p {
+      width: 70%;
+      margin: 10px;
+      padding: 10px;
+    }
+    
+    #one h1 {
+      font-size: 1.2rem;
+      margin: 10px;
+    }
+    #one ul {
+      width: 30px;
+      gap: 10px;
+      margin: 10px;
+      padding: 10px;
+    
+    }
+    
+    #grid-container {
+      display: block;
+      width: 50%;
+      gap: 20px;
+    }
+    .container{
+      display: block;
+    
+    }
+    #contact {
+      display: block;
+    }
+    }
+    
+    
+  @media screen and (601px < width > 1024px){
+    #contact {
+      display: block;
+      width: 90%;
+   
+    }
+    
+    .container {
+    display: block;
+  
+  }
+  
+    .container > div ul{
+      width: 90%;     
+    }
+  
+    #grid-container {
+      display: block;
+      width: 90%;
+  
+    }
+    #one h1 {
+      font-size: 1.5rem;
+      
+    }
+    #one h1:first-child{
+      padding-top: 50px;
+  
+    }
+    #one {
+      background-size: 100%;
+    }
+  }
